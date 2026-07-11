@@ -165,4 +165,8 @@ JWT tokens are stored in `localStorage` for simplicity. **Tradeoff:** This is vu
 
 ## 📸 Screenshots
 
-*To be added after running the frontend dev server.*
+### 🏠 Inventory Dashboard (Regular / Admin View)
+![Inventory Dashboard](screenshots/inventory.png)
+
+### ⚙️ Admin Panel (Management Actions & Add Form)
+![Admin Panel](screenshots/admin_panel.png)
