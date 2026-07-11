@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { SearchFilters } from '../types';
+import type { SearchFilters } from '../types';
 
 interface SearchBarProps {
   onSearch: (filters: SearchFilters) => void;

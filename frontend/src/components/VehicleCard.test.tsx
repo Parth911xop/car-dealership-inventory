@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import VehicleCard from '../components/VehicleCard';
-import { Vehicle } from '../types';
+import type { Vehicle } from '../types';
 
 const mockVehicle: Vehicle = {
   id: '1',

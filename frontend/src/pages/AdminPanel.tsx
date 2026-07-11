@@ -2,10 +2,11 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { vehiclesApi } from '../api';
-import { Vehicle } from '../types';
+import type { Vehicle } from '../types';
 import VehicleCard from '../components/VehicleCard';
 import VehicleForm from '../components/VehicleForm';
-import Toast, { ToastMessage } from '../components/Toast';
+import Toast from '../components/Toast';
+import type { ToastMessage } from '../components/Toast';
 
 interface RestockModalProps {
   vehicle: Vehicle;

@@ -1,5 +1,5 @@
 import api from './client';
-import { Vehicle } from '../types';
+import type { Vehicle } from '../types';
 
 export const authApi = {
   register: (email: string, password: string) =>

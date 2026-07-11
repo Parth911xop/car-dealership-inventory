@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Vehicle } from '../types';
+import type { Vehicle } from '../types';
 
 interface VehicleFormProps {
   vehicle?: Vehicle | null;

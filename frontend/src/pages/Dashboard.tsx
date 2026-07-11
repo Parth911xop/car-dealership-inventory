@@ -1,10 +1,11 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { vehiclesApi } from '../api';
-import { Vehicle, SearchFilters } from '../types';
+import type { Vehicle, SearchFilters } from '../types';
 import VehicleCard from '../components/VehicleCard';
 import SearchBar from '../components/SearchBar';
-import Toast, { ToastMessage } from '../components/Toast';
+import Toast from '../components/Toast';
+import type { ToastMessage } from '../components/Toast';
 
 export default function Dashboard() {
   const { isAdmin } = useAuth();
