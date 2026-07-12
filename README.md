@@ -165,9 +165,6 @@ JWT tokens are stored in `localStorage` for simplicity. **Tradeoff:** This is vu
 
 ## 📸 Screenshots
 
-### 🔐 Login Page — Split-screen auth with brand showcase
-![Login Page](screenshots/login.png)
-
 ### 📝 Register Page — Create account with feature highlights
 ![Register Page](screenshots/register.png)
 
