@@ -10,38 +10,44 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="container navbar-inner">
-        <Link to="/dashboard" className="navbar-brand">
-          <span>🚘</span> AutoVault
+      {/* Brand */}
+      <div className="navbar-brand">
+        <span>🚘</span>
+        AUTO<span className="brand-dot">VAULT</span>
+      </div>
+
+      {/* Nav links */}
+      <div className="navbar-nav">
+        <Link
+          to="/dashboard"
+          id="nav-dashboard-link"
+          className={`nav-btn ${location.pathname === '/dashboard' ? 'active' : ''}`}
+        >
+          Inventory
         </Link>
-
-        <div className="navbar-actions">
-          {isAdmin && (
-            <Link
-              to="/admin"
-              className={`btn btn-sm ${location.pathname === '/admin' ? 'btn-primary' : 'btn-secondary'}`}
-              id="nav-admin-link"
-            >
-              ⚙️ Admin Panel
-            </Link>
-          )}
+        {isAdmin && (
           <Link
-            to="/dashboard"
-            className={`btn btn-sm ${location.pathname === '/dashboard' ? 'btn-primary' : 'btn-secondary'}`}
-            id="nav-dashboard-link"
+            to="/admin"
+            id="nav-admin-link"
+            className={`nav-btn ${location.pathname === '/admin' ? 'active' : ''}`}
           >
-            🏠 Inventory
+            Admin Panel
           </Link>
+        )}
+      </div>
 
-          <div className="navbar-user">
-            <span>👤 {user.email.split('@')[0]}</span>
-            <span className="role-badge">{user.role}</span>
-          </div>
-
-          <button id="logout-btn" className="btn btn-logout btn-sm" onClick={logout}>
-            Sign out
-          </button>
+      {/* Right: user info + logout */}
+      <div className="navbar-right">
+        <div className="user-chip">
+          <span style={{ fontSize: 12 }}>👤</span>
+          <span style={{ fontSize: 12 }}>{user.email.split('@')[0]}</span>
+          <span className={`role-badge ${user.role === 'USER' ? 'user-role' : ''}`}>
+            {user.role}
+          </span>
         </div>
+        <button id="logout-btn" className="btn-logout" onClick={logout}>
+          Sign out
+        </button>
       </div>
     </nav>
   );
