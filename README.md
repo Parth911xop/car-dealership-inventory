@@ -165,8 +165,14 @@ JWT tokens are stored in `localStorage` for simplicity. **Tradeoff:** This is vu
 
 ## 📸 Screenshots
 
-### 🏠 Inventory Dashboard (Regular / Admin View)
-![Inventory Dashboard](screenshots/inventory.png)
+### 🔐 Login Page — Split-screen auth with brand showcase
+![Login Page](screenshots/login.png)
 
-### ⚙️ Admin Panel (Management Actions & Add Form)
-![Admin Panel](screenshots/admin_panel.png)
+### 📝 Register Page — Create account with feature highlights
+![Register Page](screenshots/register.png)
+
+### 🏠 User Dashboard — Sidebar filters + stats + inventory grid
+![User Dashboard](screenshots/dashboard.png)
+
+### ⚙️ Admin Panel — Inventory management with health stats
+![Admin Panel](screenshots/admin.png)
