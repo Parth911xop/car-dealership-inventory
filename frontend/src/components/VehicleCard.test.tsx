@@ -25,7 +25,7 @@ describe('VehicleCard', () => {
 
   it('renders the formatted price', () => {
     render(<VehicleCard vehicle={mockVehicle} />);
-    expect(screen.getByText(/\$25,000/)).toBeInTheDocument();
+    expect(screen.getByText(/₹25,000/)).toBeInTheDocument();
   });
 
   it('renders the category badge', () => {

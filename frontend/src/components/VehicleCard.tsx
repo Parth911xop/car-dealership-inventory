@@ -76,7 +76,7 @@ export default function VehicleCard({
         </div>
 
         <div className="vehicle-card-price">
-          ${vehicle.price.toLocaleString()}
+          ₹{vehicle.price.toLocaleString('en-IN')}
         </div>
       </div>
 
